@@ -171,16 +171,11 @@
 }
 /*---------------------------------Control Panel Section---------------------------------*/
 #cont-panel{
-    /* height: 50vw; */
-    /* width: 100vw; */
-    /* display: flex; */
-    /* margin-left: 51vw;
-    margin-top: -50vw; */
     width: 98vw;
 }
 #control-panel{
     border: 0.33vw solid grey;
-    border-radius: 5%;
+    border-radius: 2vw;
     border-style: groove;
     width: 50%;
     background: white;
@@ -191,7 +186,6 @@
     color: maroon;
     font-family: 'bevel';
     text-align: center;
-    /* font-size: 3.5vw; */
 }
 .switch {
     background-color: black;
@@ -315,10 +309,47 @@
         opacity: 0;
    }
 }
-/* output */
+
+#vs-value,#r1-value,#r2-value,#r3-value,#rl-value,#vdc-value,#vth-value,#rth-value,#idc-value{
+    border: 0.33vw solid black;
+    box-sizing: border-box;
+    box-shadow: 0.33vw 0.66vw #888888;
+    border-style: outset;
+    max-width: 40.58vw;
+    display: block;
+    background: transparent;
+}
+#input-fields-1,#input-fields-4,#input-fields-5,#input-fields-6,#input-fields-7,#input-fields-8{
+    margin-top: 1.5vw;
+    margin-left: 1.5vw;
+}
+#input-fields-2,#input-fields-3{
+    margin-left: 1.5vw;
+}
+#vs-label,#vth-label,#rth-label,#r1-label,#r2-label,#r3-label,#rl-label,#vdc-label{
+    border: 0.33vw solid black;
+    border-right: none;
+    box-sizing: border-box;
+    box-shadow: 0.33vw 0.66vw #888888;
+    border-style: outset;
+}
+#vdc-value,#vdc-label{
+    display: none;
+}
+#rl-value,#rl-label{
+    display: none;
+}
+#vth-value,#rth-value,#vth-label,#rth-label{
+    display: none;
+}
+#idc-value,#idc-label{
+    display: none;
+}
+
+/*--------------------output----------------------*/
 #output-panel{
     border: 0.33vw solid grey;
-    border-radius: 5%;
+    border-radius: 2vw;
     border-style: groove;
     width: 50%;
     background: white;
@@ -330,5 +361,4 @@
     color: maroon;
     font-family: 'bevel';
     text-align: center;
-    /* font-size: 3.5vw; */
 }

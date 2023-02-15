@@ -107,18 +107,6 @@
     </div>
 </div>
 <!-------------Control Panel Section------------->
-<!-- <div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-6">
-            Container Left
-        </div>
-        <div class="col-lg-6">
-            Container Right
-        </div>
-    </div>
-</div> -->
-
-
 <div class="container-fluid" id="cont-panel">
 <div class="row">
     <div id="control-panel" class="col">
@@ -133,6 +121,34 @@
               <div class="shadow"></div>
             </div>
         </label>
+        <div id="input-fields-1">
+            <div class="input-group">
+                <div class="input-group-prepend" id="vs-label">
+                    <span class="input-group-text">V<sub>S</sub></span>
+                </div>
+                <input type="number" id="vs-value" min="0" max="50" step="0.01" class="form-control" placeholder="ENTER THE VALUE OF SOURCE VOLTAGE (VS)" readonly/>
+            </div>
+        </div>
+
+
+    <div id="input-fields-2">
+            <div class="input-group">
+                <div class="input-group-prepend" id="vth-label">
+                    <span class="input-group-text">V<sub>TH</sub></span>
+                </div>
+                <input type="number" id="vth-value" min="0" max="50" step="0.01" class="form-control" placeholder="ENTER THE VALUE OF THEVENIN VOLTAGE (VTH)" readonly/>
+            </div>
+        </div>
+
+
+    <div id="input-fields-3">
+            <div class="input-group">
+                <div class="input-group-prepend" id="rth-label">
+                    <span class="input-group-text">R<sub>TH</sub></span>
+                </div>
+                <input type="number" id="rth-value" min="0" max="50" step="0.01" class="form-control" placeholder="ENTER THE VALUE OF THEVENIN RESISTANCE (RTH)" readonly/>
+            </div>
+        </div>
     </div>    
     <div id="output-panel" class="col">
         <p class="display-4" id="out-header">OUTPUT</p>
