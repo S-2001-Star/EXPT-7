@@ -310,7 +310,7 @@
    }
 }
 
-#vs-value,#r1-value,#r2-value,#r3-value,#rl-value,#vdc-value,#vth-value,#rth-value,#idc-value{
+#vs-value,#vth-value,#rth-value{
     border: 0.33vw solid black;
     box-sizing: border-box;
     box-shadow: 0.33vw 0.66vw #888888;
@@ -319,31 +319,19 @@
     display: block;
     background: transparent;
 }
-#input-fields-1,#input-fields-4,#input-fields-5,#input-fields-6,#input-fields-7,#input-fields-8{
+#input-fields-1{
     margin-top: 1.5vw;
     margin-left: 1.5vw;
 }
 #input-fields-2,#input-fields-3{
     margin-left: 1.5vw;
 }
-#vs-label,#vth-label,#rth-label,#r1-label,#r2-label,#r3-label,#rl-label,#vdc-label{
+#vs-label,#vth-label,#rth-label{
     border: 0.33vw solid black;
     border-right: none;
     box-sizing: border-box;
     box-shadow: 0.33vw 0.66vw #888888;
     border-style: outset;
-}
-#vdc-value,#vdc-label{
-    display: none;
-}
-#rl-value,#rl-label{
-    display: none;
-}
-#vth-value,#rth-value,#vth-label,#rth-label{
-    display: none;
-}
-#idc-value,#idc-label{
-    display: none;
 }
 
 /*--------------------output----------------------*/
