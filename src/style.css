@@ -176,6 +176,7 @@
     /* display: flex; */
     /* margin-left: 51vw;
     margin-top: -50vw; */
+    width: 98vw;
 }
 #control-panel{
     border: 0.33vw solid grey;
@@ -184,6 +185,7 @@
     width: 50%;
     background: white;
     background-size: cover;
+    margin-right: 1vw;
 }
 #control-panel #cont-header{
     color: maroon;
