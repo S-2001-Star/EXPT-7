@@ -107,8 +107,21 @@
     </div>
 </div>
 <!-------------Control Panel Section------------->
+<!-- <div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6">
+            Container Left
+        </div>
+        <div class="col-lg-6">
+            Container Right
+        </div>
+    </div>
+</div> -->
+
+
 <div class="container-fluid" id="cont-panel">
-    <div id="control-panel">
+<div class="row">
+    <div id="control-panel" class="col">
         <p class="display-4" id="cont-header">CONTROL PANEL</p>
         <label class="switch">
             <input id="power-switch" type="checkbox" onclick="poweron()">
@@ -120,24 +133,11 @@
               <div class="shadow"></div>
             </div>
         </label>
-    </div>
-    <div id="control-panel1">
-        <p class="display-4" id="cont-header">OUTPUT</p>
-        <!-- <label class="switch">
-            <input id="power-switch" type="checkbox" onclick="poweron()">
-            <div class="button">
-              <div class="light"></div>
-              <div class="dots"></div>
-              <div class="characters"></div>
-              <div class="shine"></div>
-              <div class="shadow"></div>
-            </div>
-        </label> -->
-    </div>      
+    </div>    
+    <div id="output-panel" class="col">
+        <p class="display-4" id="out-header">OUTPUT</p>
+    </div>  
 </div>
-<!-------------Control Panel Section------------->
-<!-- <div class="container-fluid" id="cont-panel1" style="flex-direction: row; display: flex;">
-          
-</div> -->
+</div>
 </body>
 </html>
