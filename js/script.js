@@ -74,14 +74,14 @@ function poweron(){
 }
 
 //---------------------VOLTMETER--------------
-var vs, frq, vin, x
+var vs, frq, vin, x;
 
 
 function volt_calc(){
     vs = 230;
     frq = 50;
-    x= document.getElementById("dc_value").value;
+    x= document.getElementById("dc-value").value;
 
     vin= parseFloat(x)*vs;
-    document.getElementById("am_value1").value= vin.toPrecision(2);
+    document.getElementById("am-value1").value= vin.toPrecision(2);
 }
