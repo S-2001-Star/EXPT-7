@@ -312,7 +312,7 @@
     margin-top: -2vw;
     margin-left: 12vw;
   }
-  #dc-slider,#r-slider {
+  #dc-slider,#r-slider,#l-slider,#c-slider {
     -webkit-appearance: none;
     width: 100%;
     height: 1.63vw;
@@ -325,11 +325,11 @@
     border-radius:1.30vw;
   }
   
-  #dc-slider:hover, #r-slider:hover {
+  #dc-slider:hover, #r-slider:hover,#l-slider:hover,#c-slider:hover {
     opacity: 1;
   }
   
-  #dc-slider::-webkit-slider-thumb, #r-slider::-webkit-slider-thumb {
+  #dc-slider::-webkit-slider-thumb, #r-slider::-webkit-slider-thumb,#l-slider::-webkit-slider-thumb,#c-slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 1.62vw;
@@ -340,7 +340,7 @@
     border-radius:20px;
   }
   
-  #dc-slider::-moz-range-thumb, #r-slider::-moz-range-thumb {
+  #dc-slider::-moz-range-thumb, #r-slider::-moz-range-thumb,#l-slider::-moz-range-thumb,#c-slider::-moz-range-thumb {
     width: 1.62vw;
     height: 1.62vw;
     background: #04AA6D;
