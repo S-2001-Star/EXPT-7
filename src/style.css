@@ -367,41 +367,17 @@
     font-family: 'bevel';
     text-align: center;
 }
-#outputs{
-    margin-left: 15vw;
-  }
-  #V_out,#I_out,#V_out_rms,#I_out_rms,#crf,#vrf,#cff,#vff,#pf,#re,#tuf,#tuf_pw,#tuf_sw,#pdc,#piv{
+#XL_out{
     width: 10vw;
     height: 2vw;
     border: none;
     font-weight: bold;
     color: red;
-  }
-  #out_one,#out_two{
+}
+#out_one{
     display: flex;
     margin-left: 1vw;
-  }
-  #out_one p,#out_two p{
-    font-size: 1.3vw;
-  }
-  #inputs{
-    width: 55vw;
-    margin-left: 1vw;
-    align-items: center;
-  }
-  #input_label{
-    font-weight: bold;
-    margin-left: 1vw;
-    font-size: 1.5vw;
-    font-family: 'Graduate', cursive;
-  }#inputs{
-    width: 55vw;
-    margin-left: 1vw;
-    align-items: center;
-  }
-  #input_label{
-    font-weight: bold;
-    margin-left: 1vw;
-    font-size: 1.5vw;
-    font-family: 'Graduate', cursive;
-  }
+}
+#out_one p{
+    font-size: 1.3rem;
+}
