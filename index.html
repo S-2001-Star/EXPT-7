@@ -117,12 +117,23 @@
               <div class="shadow"></div>
             </div>
         </label>
+
+        <div id="input-fields-4">
+            <div id="source-control">
+                <h4>VARIAC</H4>
+                <div class="source-slider">
+                    <input type="range" min="0" max="1" value="0" step="0.01" class="slider_dc" id="dc-slider" oninput="dcsliderChange()">
+                    <a id="dc-disp"><input id="dc-value" type="text" min="0" max="1" step="0.01" value="" oninput="txtchng()" readonly=""></a>
+                </div>
+            </div>
+        </div>
+
         <div id="input-fields-1">
             <div class="input-group">
                 <div class="input-group-prepend" id="vs-label">
-                    <span class="input-group-text">V<sub>S</sub></span>
+                    <span class="input-group-text">R</sub></span>
                 </div>
-                <input type="number" id="vs-value" min="0" max="50" step="0.01" class="form-control" placeholder="ENTER THE VALUE OF SOURCE VOLTAGE (VS)">
+                <input type="number" id="vs-value" min="50" max="150" step="0.01" class="form-control" placeholder="ENTER THE VALUE OF RESISTANCE (R)">
             </div>
         </div>
 
@@ -130,9 +141,9 @@
     <div id="input-fields-2">
             <div class="input-group">
                 <div class="input-group-prepend" id="vth-label">
-                    <span class="input-group-text">V<sub>TH</sub></span>
+                    <span class="input-group-text">L</sub></span>
                 </div>
-                <input type="number" id="vth-value" min="0" max="50" step="0.01" class="form-control" placeholder="ENTER THE VALUE OF THEVENIN VOLTAGE (VTH)">
+                <input type="number" id="vth-value" min="10" max="30" step="0.01" class="form-control" placeholder="ENTER THE VALUE OF INDUCTANCE (L)">
             </div>
         </div>
 
@@ -140,14 +151,24 @@
     <div id="input-fields-3">
             <div class="input-group">
                 <div class="input-group-prepend" id="rth-label">
-                    <span class="input-group-text">R<sub>TH</sub></span>
+                    <span class="input-group-text">C</span>
                 </div>
-                <input type="number" id="rth-value" min="0" max="50" step="0.01" class="form-control" placeholder="ENTER THE VALUE OF THEVENIN RESISTANCE (RTH)">
+                <input type="number" id="rth-value" min="0.1" max="0.33" step="0.01" class="form-control" placeholder="ENTER THE VALUE OF CAPACITANCE (C)">
             </div>
         </div>
-    </div>    
+
+        
+    </div>   
+    
+<!--------OUTPUT------->
     <div id="output-panel" class="col">
         <p class="display-4" id="out-header">OUTPUT</p>
+        <div class="container-fluid" id="outputs"><p id="input_label">OUTPUT VALUES <i class="fa fa-arrow-right"></i></p>
+            <div id="out_one">
+                <p><b>1.</b> DC Output Voltage (V<sub>DC</sub>) in Volts =</p>
+                <input type="number" id="V_out" class="form-control" readonly/>
+            </div>
+        </div>
     </div>  
 </div>
 </div>
