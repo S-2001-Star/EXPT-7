@@ -114,28 +114,14 @@
     /* font-size: 3.5vw; */
 }
 #main_ckt{
-    width: 50vw;
+    width:50%;
+    height:300px;
     margin-left: -1vw;
     margin-top: 5vw;
-    display: none;
-}
-#rth_ckt{
-    width: 50vw;
-    margin-left: -2.5vw;
-    margin-top: 5vw;
-    display: none;
-}
-#vth_ckt{
-    width: 42vw;
-    margin-left: 3vw;
-    margin-top: 5vw;
-    display: none;
-}
-#eqv_ckt{
-    width: 50vw;
-    margin-left: -1vw;
-    margin-top: 5vw;
-    display: none;
+    display: block;
+    /* align-items: center !important; */
+    justify-content: center !important;
+    /* padding: 5vw; */
 }
 #ammeter{
     margin-top: 7vw;
@@ -145,18 +131,10 @@
     margin-top: 10.5vw;
     margin-left:8.4vw;
 }
-#ammeter2{
-    margin-top: 15.2vw;
-    margin-left:5.85vw;
-}
-#ammeter3{
-    margin-top: 7.5vw;
-    margin-left:-5.2vw;
-}
 #ammeter-disp{
     margin-left: 3.2vw;
 }
-#am-value,#am-value1,#am-value2,#am-value3{
+#am-value,#am-value1{
     border: 0.66vw solid #8E8E8E;
     font-size: 2.28vw;
     width: 5vw;
