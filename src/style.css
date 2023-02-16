@@ -350,7 +350,25 @@
     font-size: 2rem;
     border:0.1vw solid black;
   }
-
+  #instance-1-sim{
+    text-align: center;
+    margin-top: 1.5vw;
+}
+#sim-1_s1,#sim-2_s1{
+    border: 0.2vw solid black;
+    width: 10vw;
+    height: 3vw;
+    border-radius: 1vw;
+    color: white;
+    font-size: 1.5vw;
+    font-family: 'Roboto Mono', monospace;
+}
+#sim-1{
+    background: green;
+}
+#sim-2{
+    background: red;
+}
 /*--------------------output----------------------*/
 #output-panel{
     border: 0.33vw solid grey;

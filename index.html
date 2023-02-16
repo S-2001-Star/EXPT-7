@@ -96,7 +96,7 @@
             <div class="container-fluid">
             <div id="ammeter1">
                 <div id="ammeter-disp1">
-                    <a id="am-disp1"><input id="am-value1" value="" type="text" readonly="" onchange="volt_calc()"></a>
+                    <a id="am-disp1"><input id="am-value1" value="" type="text" readonly=""></a>
                 </div>
             </div>
         </div>
@@ -159,9 +159,11 @@
             </div>
         </div>
         <input type="range" min="0" max="0.33" value="0" step="0.11" class="slider_dc" id="c-slider" oninput="csliderChange()"disabled>
-
-    </div>   
-    
+        <div id="instance-1-sim">
+            <button id="sim-1_s1" onclick="sim_calc()">SIMULATE</button>
+            <button id="sim-2_s1">RESET</button>
+        </div>
+    </div> 
 <!--------OUTPUT------->
     <div id="output-panel" class="col">
         <p class="display-4" id="out-header">OUTPUT</p>

@@ -73,15 +73,23 @@ function poweron(){
     }
 }
 
-//---------------------VOLTMETER--------------
-var vs, frq, vin, x;
+var vs, frq, vin, x, xl, w;
 
 
-function volt_calc(){
+function sim_calc(){
+
+    //---------------------VOLTMETER--------------
     vs = 230;
     frq = 50;
     x= document.getElementById("dc-value").value;
 
     vin= parseFloat(x)*vs;
-    document.getElementById("am-value1").value= vin.toPrecision(2);
+    document.getElementById("am-value1").value= vin.toPrecision(3);
+    //---------------------INDUCTIVE REACTANCE--------------
+    w = 314.16;
+    l = document.getElementById("l-value").value;
+
+    xl = parseFloat(w)*parseInt(l);
+    document.getElementById("XL_out").value = xl.toPrecision(4);
+
 }
