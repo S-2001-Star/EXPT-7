@@ -367,17 +367,17 @@
     font-family: 'bevel';
     text-align: center;
 }
-#XL_out{
+#XL_out,#XC_out,#Z_out,#fi_out,#imp_out,#I_out,#pf_out,#P_out{
     width: 10vw;
     height: 2vw;
     border: none;
     font-weight: bold;
     color: red;
 }
-#out_one{
+#out_one,#out_two,#out_three,#out_four,#out_five,#out_six,#out_seven,#out_eight{
     display: flex;
     margin-left: 1vw;
 }
-#out_one p{
+#out_one p,#out_two p,#out_three p,#out_four p,#out_five p,#out_six p,#out_seven p,#out_eight p{
     font-size: 1.3rem;
 }
