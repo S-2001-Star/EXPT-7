@@ -73,7 +73,7 @@ function poweron(){
     }
 }
 
-var vs, frq, vin, x, xl, w;
+var vs, frq, vin, x, xl, w, xc, c;
 
 
 function sim_calc(){
@@ -91,5 +91,11 @@ function sim_calc(){
 
     xl = parseFloat(w)*parseInt(l);
     document.getElementById("XL_out").value = xl.toPrecision(4);
+    //---------------------INDUCTIVE CAPACITANCE--------------
+    w = 314.16;
+    c = document.getElementById("c-value").value;
+
+    xc = (1/(parseFloat(w)*parseFloat(c)));
+    document.getElementById("XC_out").value = xc.toPrecision(4);
 
 }
