@@ -11,6 +11,19 @@ function txtchng() {
     tc = document.getElementById("dc-value").value;
     document.getElementById("dc-slider").value = tc;
 }
+// --------------------R SLIDER--------------------
+var rsliderval;
+function rsliderChange() {
+  dcsliderval = document.getElementById("r-slider").value;
+  document.getElementById("r-value").value = dcsliderval;
+  fbias();
+}
+
+var td;
+function txtchng1() {
+    td = document.getElementById("r-value").value;
+    document.getElementById("r-slider").value = td;
+}
 
 // --------------------POWER ON--------------------
 function poweron(){
@@ -32,16 +45,5 @@ function poweron(){
         document.getElementById("dc-value").value="";
         document.getElementById("am-value").value="";
         document.getElementById("am-value1").value="";
-    }
-}
-
-if(document.getElementById("r-value").value==50){
-    document.getElementById("r-value").value="50";
-    if(document.getElementById("r-value").value==100;){
-        document.getElementById("r-value").value=="100";
-        if(document.getElementById("r-value").value==150;){
-            document.getElementById("r-value").value=="150";
-        }
-        else
     }
 }
