@@ -93,7 +93,7 @@
 }
 /*---------------------------------Simulator Section---------------------------------*/
 #sim-cont{
-    /* height: 50vh; */
+    height: 50vw;
     /* width: 100vw; */
     display: flex;
     /* margin-left: 1vw; */
@@ -118,15 +118,15 @@
     height:20rem;
 }
 #ammeter{
-    /* margin-top: 7vw; */
-    /* margin-left:-28.5vw; */
+    margin-top: -25.5vw;
+    margin-left:56vw;
 }
 #ammeter1{
-    margin-top: 10.5vw;
-    margin-left:8.4vw;
+    margin-bottom: -10.5vw;
+    margin-left:66.8vw;
 }
 #ammeter-disp{
-    /* margin-left: 3.2vw; */
+    margin-left: 3.2vw;
 }
 #am-value,#am-value1{
     border: 0.66vw solid #8E8E8E;
