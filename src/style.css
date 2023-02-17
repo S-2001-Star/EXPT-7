@@ -363,11 +363,17 @@
     font-size: 1.5vw;
     font-family: 'Roboto Mono', monospace;
 }
-#sim-1{
+#sim-1_s1{
     background: green;
 }
-#sim-2{
+#sim-1_s1:hover{
+    background: yellowgreen;
+}
+#sim-2_s1{
     background: red;
+}
+#sim-2_s1:hover{
+    background: orange;
 }
 /*--------------------output----------------------*/
 #output-panel{
@@ -385,7 +391,7 @@
     font-family: 'bevel';
     text-align: center;
 }
-#XL_out,#XC_out,#Z_out,#fi_out,#imp_out,#I_out,#pf_out,#P_out{
+#XL_out,#XC_out,#Z_out,#fi_out,#imp_out,#I_out,#pf_out,#P_out,#ang_out,#ang_out1{
     width: 10vw;
     height: 2vw;
     border: none;

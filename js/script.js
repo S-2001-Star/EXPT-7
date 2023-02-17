@@ -73,7 +73,8 @@ function poweron(){
     }
 }
 
-var vs, frq, vin, x, xl, w, xc, c;
+var vs, frq, vin, x, xl, w, xc, c, r,mz,fi,a,b,imp,i,pf,p,d,e,f,g,h;
+var aa, bb, cc;
 
 
 function sim_calc(){
@@ -84,18 +85,53 @@ function sim_calc(){
     x= document.getElementById("dc-value").value;
 
     vin= parseFloat(x)*vs;
-    document.getElementById("am-value1").value= vin.toPrecision(3);
+    document.getElementById("am-value1").value= vin.toPrecision(8);
     //---------------------INDUCTIVE REACTANCE--------------
     w = 314.16;
-    l = document.getElementById("l-value").value;
+    aa = document.getElementById("l-value").value;
+    l = parseInt(aa)*Math.pow(10,-3);
 
-    xl = parseFloat(w)*parseInt(l);
-    document.getElementById("XL_out").value = xl.toPrecision(4);
+    xl = parseFloat(w)*parseFloat(l);
+    document.getElementById("XL_out").value = xl.toPrecision(8);
     //---------------------INDUCTIVE CAPACITANCE--------------
-    w = 314.16;
-    c = document.getElementById("c-value").value;
+    bb = document.getElementById("c-value").value;
+    c = parseFloat(bb)*Math.pow(10,-6);
 
     xc = (1/(parseFloat(w)*parseFloat(c)));
-    document.getElementById("XC_out").value = xc.toPrecision(4);
+    document.getElementById("XC_out").value = xc.toPrecision(16);
+    //---------------MAGNITUDE OF IMPEDANCE-------------------
+    r = document.getElementById("r-value").value;
+    d = parseFloat(xc);
+    e = parseFloat(xl);
+    g = Math.pow(r,2);
+    h = e - d;
+    mz = Math.sqrt(g + Math.pow(h,2));
+    document.getElementById("Z_out").value = mz.toPrecision(16);
 
+    //---------------PHASE OF IMPEDANCE-------------------
+    a = ((e-d)/parseFloat(r));
+    b = (180/Math.PI);
+    fi = ((Math.atan(a))*b);
+    document.getElementById("fi_out").value = fi.toPrecision(8);
+    
+    //---------------IMPEDANCE-------------------
+    document.getElementById("imp_out").value = mz.toPrecision(8);
+    document.getElementById("ang_out").value = fi.toPrecision(8);
+
+     //---------------NET CURRENT-------------------
+
+     i = (parseFloat(vin)/parseFloat(mz));
+     document.getElementById("I_out").value = i.toPrecision(4);
+     document.getElementById("am-value").value = i.toPrecision(4);
+     cc = -parseFloat(fi);
+     document.getElementById("ang_out1").value = cc.toPrecision(4);
+
+
+     //---------------POWER FACTOR-------------------
+     pf = (parseFloat(r)/parseFloat(mz));
+     document.getElementById("pf_out").value = pf.toPrecision(4);
+
+     //---------------POWER------------------
+     p = parseFloat(vin)*parseFloat(i)*parseFloat(pf);
+     document.getElementById("P_out").value = p.toPrecision(8);
 }

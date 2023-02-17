@@ -122,8 +122,8 @@
             <div id="source-control">
                 <h4>VARIAC</H4>
                 <div class="source-slider">
-                    <input type="range" min="0" max="1" value="0" step="0.01" class="slider_dc" id="dc-slider" oninput="dcsliderChange()" disabled>
-                    <a id="dc-disp"><input id="dc-value" type="text" min="0" max="1" step="0.01" value="" oninput="txtchng()" readonly=""></a>
+                    <input type="range" min="0" max="1" value="0" step="0.1" class="slider_dc" id="dc-slider" oninput="dcsliderChange()" disabled>
+                    <a id="dc-disp"><input id="dc-value" type="text" min="0" max="1" step="0.1" value="" oninput="txtchng()" readonly=""></a>
                 </div>
             </div>
         </div>
@@ -155,10 +155,10 @@
                 <div class="input-group-prepend" id="c-label">
                     <span class="input-group-text">C</span>
                 </div>
-                <input type="number" id="c-value" min="0" max="0.33" step="0.11" class="form-control" placeholder="VALUE OF CAPACITANCE (C)" readonly oninput="txtchng3()">
+                <input type="number" id="c-value" min="0" max="0.3" step="0.1" class="form-control" placeholder="VALUE OF CAPACITANCE (C)" readonly oninput="txtchng3()">
             </div>
         </div>
-        <input type="range" min="0" max="0.33" value="0" step="0.11" class="slider_dc" id="c-slider" oninput="csliderChange()"disabled>
+        <input type="range" min="0" max="0.3" value="0" step="0.1" class="slider_dc" id="c-slider" oninput="csliderChange()"disabled>
         <div id="instance-1-sim">
             <button id="sim-1_s1" onclick="sim_calc()">SIMULATE</button>
             <button id="sim-2_s1">RESET</button>
@@ -186,11 +186,13 @@
             </div>
             <div id="out_five">
                 <p><b>5.</b> Impedance (Z) =</p>
-                <input type="number" id="imp_out" class="form-control" readonly/>
+                <input type="number" id="imp_out" class="form-control" readonly/><p class="h4">∠</p>
+                <input type="number" id="ang_out" class="form-control" readonly/>
             </div>
             <div id="out_six">
                 <p><b>6.</b> Net Current (I) =</p>
-                <input type="number" id="I_out" class="form-control" readonly/>
+                <input type="number" id="I_out" class="form-control" readonly/><p class="h4">∠</p>
+                <input type="number" id="ang_out1" class="form-control" readonly/>
             </div>
             <div id="out_seven">
                 <p><b>7.</b> Power Factor (cosΦ) =</p>
