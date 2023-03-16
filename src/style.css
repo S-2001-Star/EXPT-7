@@ -139,7 +139,98 @@
     font-family:'digital-7';
     color: red;
     background-color: black;
-    /* display: none; */
+}
+
+@media(max-width:1506px){
+    #ammeter{
+        margin-top: -25.5vw;
+        margin-left:56.3vw;
+    }
+    #ammeter1{
+        margin-top: -3.3vw;
+        margin-left:66.8vw;
+    }
+    #ammeter-disp{
+        margin-left: 3.2vw;
+    }  
+}
+@media(max-width:1503px){
+    #ammeter{
+        margin-top: -25.5vw;
+        margin-left:56.5vw;
+    }
+    #ammeter1{
+        margin-top: -3.3vw;
+        margin-left:67vw;
+    }
+    #ammeter-disp{
+        margin-left: 3.2vw;
+    }  
+}
+@media(max-width:1453px){
+    #ammeter{
+        margin-top: -26vw;
+        margin-left:57vw;
+    }
+    #ammeter1{
+        margin-top: -3.3vw;
+        margin-left:67.5vw;
+    }
+    #ammeter-disp{
+        margin-left: 3.2vw;
+    }  
+}
+@media(max-width:1430px){
+    #ammeter{
+        margin-top: -27vw;
+        margin-left:57.1vw;
+    }
+    #ammeter1{
+        margin-top: -3vw;
+        margin-left:68vw;
+    }
+    #ammeter-disp{
+        margin-left: 3.2vw;
+    }  
+}
+@media(max-width:1395px){
+    #ammeter{
+        margin-top: -27vw;
+        margin-left:57.5vw;
+    }
+    #ammeter1{
+        margin-top: -3vw;
+        margin-left:68.7vw;
+    }
+    #ammeter-disp{
+        margin-left: 3.2vw;
+    }  
+}
+@media(max-width:1360px){
+    #ammeter{
+        margin-top: -28vw;
+        margin-left:58vw;
+    }
+    #ammeter1{
+        margin-top: -3vw;
+        margin-left:69.3vw;
+    }
+    #ammeter-disp{
+        margin-left: 3.2vw;
+    }  
+}
+@media(max-width:1318px){
+    #ammeter{
+        margin-top: -28vw;
+        margin-left:58.5vw;
+    }
+    #ammeter1{
+        margin-top: -3vw;
+        margin-left:69.3vw;
+    }
+    #ammeter-disp{
+        margin-left: 3.2vw;
+    }  
 }
 /*---------------------------------Control Panel Section---------------------------------*/
 #cont-panel{
